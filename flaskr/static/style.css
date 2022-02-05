@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(77, 54, 54);
+}
+.loginPage {
+    margin-top: 200px;
+    width: 50%;
+    height: 0px;
+    top: 50px;
+    left: 50px;
+    transform: translate(50%, -50%); 
+    position: absolute;
+    text-align: center;
+}
+.loginPage h1 {
+    position: static;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px;
+}

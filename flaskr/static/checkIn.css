@@ -1,0 +1,69 @@
+
+body{
+    background-color: yellow;
+}
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 900px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#logout {
+    padding-top: 400px;
+    padding-left: 50px;
+}
+#weight {
+    border-style: solid;
+    border-inline: 1px;
+    border-color: black;
+    
+}
+
+
+.calendar{
+    position: relative;
+    width: 200px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.calendar #month{
+    position: relative;
+    padding: 5px 10px;
+    background: red;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+.calendar #dayName{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
+}
+.calendar #dayNumber{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+}
+.calendar #year{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #999;
+}

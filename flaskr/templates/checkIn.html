@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>		
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name = "format-detection" content = "telephone=no">
+        
+    <title>Simple Calendar</title>
+
+	<!-- Styles -->
+    <link rel="stylesheet" type="text/css"  href="../static/checkIn.css" />
+
+</head>
+<body>
+    
+    <div class="row">
+        <div class="column" style="background-color: orange">
+            <li>
+                <ul>Flight Number: </ul>
+                <ul>Arrival: </ul>
+                <ul>Time: </ul>
+            </li>
+        <br><br><br><br><br><br><br><br>
+            <p>
+                <h6>Flight Number: </h6>
+                <input type="text">
+            </p>
+            <button>Change</button>
+            <p>
+                <h6>Passport/ ID.NO: </h6>
+                <input type="text">
+            </p>
+            <button>Search Ticket</button>
+        </div>
+        
+        <div class="column" style="background-color: orange;">
+            <li>
+                <ul>ID : </ul>
+                <ul>Name :</ul>
+                <ul>Surname :</ul>
+                <ul>Passport Number :</ul>
+                <ul>Seat Number :</ul>
+                <ul>Flight Number :</ul>
+                <ul>Class :</ul>
+                <ul>Ticket Number :</ul>
+                <ul>Airport :</ul>
+            </li>
+            <br><br><br>
+            <box id = "weight">15 kg</box>
+            <button>Overweight</button>
+        </div>
+        <div class="column" style="background-color: orange;">
+            <div class="calendar">
+                <p id="month"></p>
+                <p id="dayName"></p>
+                <p id="dayNumber"></p>
+                <p id="year"></p>
+            </div>
+            <div id = "logout">
+            <button>Print</button>
+            <input type="submit" name="submit_button" value="Check In">
+            </div>
+        </div>
+      </div>
+
+ <script src="../static/takvim.js"></script>
+</body>  
+</html>

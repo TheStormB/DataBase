@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+<style>
+
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+</style>
+<h1>Departure</h1>
+<table>
+  <thead>
+    <tr>
+        <th>Ticket ID</th>
+        <th>Destination Time</th>
+        <th>Destination Country</th>
+    </tr>
+    </thead>
+    <tbody>
+     {% for row in data %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td><button name="{{row[0]}}">get</button><button name="{{row[0]}}">delete</button></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<br><br>
+
+<h1>Arrival</h1>
+<table>
+  <thead>
+    <tr>
+        <th>Ticket ID</th>
+        <th>Destination Time</th>
+        <th>Destination Country</th>
+    </tr>
+    </thead>
+    <tbody>
+     {% for row in data %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <form method="get" action="/add">
+                <td><input type="submit" value="Add">
+                <input type="" value="Delete"></td>
+                </form>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

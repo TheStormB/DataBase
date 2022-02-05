@@ -1,0 +1,19 @@
+<doctype html="">
+<title>New Album - Flask Music Database</title>
+<h2>New Album</h2>
+    <tbody>
+    {% from "_add.html" import render_field %}
+<form method=post>
+  <dl>
+    {{ render_field(form.airport_name) }}
+    {{ render_field(form.Flight_No) }}
+    {{ render_field(form.Arrival_Date) }}
+    {{ render_field(form.Country) }}
+
+  </dl>
+  <p><input type=submit value=Register>
+</form>
+    </tbody>
+</doctype>
+
+
